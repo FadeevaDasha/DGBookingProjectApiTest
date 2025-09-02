@@ -3,7 +3,7 @@ import pytest
 
 
 @allure.feature('Test Create Booking')
-@allure.story('Test connection')
+@allure.story('Test create valid booking')
 def test_create_booking(api_client, generate_random_booking_data):
     response = api_client.create_booking(generate_random_booking_data)
     assert 'bookingid' in response
