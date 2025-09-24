@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // Шаг создания виртуального окружения и активации его
                 sh 'python3 -m venv venv'
-                sh '. venv/bin/activat'
+                sh '. venv/bin/activate'
 
 
                 // Установка зависимостей из requirements.txt
